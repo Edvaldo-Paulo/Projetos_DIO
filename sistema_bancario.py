@@ -61,7 +61,7 @@ while True:
                 except ValueError:
                     print('Isto não é um número. Tente novamente!')
                 
-                ('Você deseja Continuar?')
+               print('Você deseja Continuar?')
                 decisao = input('Digite 1 para sim ou 2 para não: ')
 
                 if decisao == '2':
