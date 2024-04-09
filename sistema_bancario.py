@@ -79,16 +79,16 @@ while True:
         Nome: André Vieira
                     
         #####Atividades da Conta#####
-        Depósito: {valor_deposito}
+        Depósito: R${valor_deposito}
             
         Saques: 
-        01 - {saque1}
-        02 - {saque2}
-        03 - {saque3}
+        01 - R${saque1}
+        02 - R${saque2}
+        03 - R${saque3}
             
         #####Situação da conta#####
             
-        Saldo atual: {saldo_atual}
+        Saldo atual: R${saldo_atual}
         """)
 
     elif menu.lower() == 'q':
