@@ -102,6 +102,7 @@ def depositar(saldo, extrato, valor, /):
     
     return saldo, extrato
 
+<<<<<<< HEAD
 def sacar(*, saldo, valor, extrato, numero_saques, limite, limite_saques):
         
         excedeu_saldo = valor > saldo
@@ -123,6 +124,55 @@ def sacar(*, saldo, valor, extrato, numero_saques, limite, limite_saques):
             print(f'{Fore.YELLOW} Insira um valor numérico!{Fore.RESET}')
     
         return saldo, extrato
+=======
+                    if valor_saque <= 500.00:
+                        print('Saque realizado com sucesso!')
+                        total_saques += + valor_saque
+
+                    
+                        if cont_saques == 1:
+                            saque1 = valor_saque
+                    
+                        if cont_saques == 2:
+                            saque2 = valor_saque
+                        if cont_saques == 3:
+                            saque3 = valor_saque
+                    else:
+                        print('Você não pode sacar um valor maior que R$500,00!')
+                        
+                except ValueError:
+                    print('Isto não é um número. Tente novamente!')
+                
+                print('Você deseja Continuar?')
+                decisao = input('Digite 1 para sim ou 2 para não: ')
+
+                if decisao == '2':
+                    stop_structures = True
+                                
+            if stop_structures:
+                break
+
+    elif menu.lower() == 'e':
+        saldo_atual = (SALDO_INICIAL + valor_deposito) - total_saques
+        
+        print(f"""
+        #####Cliente####
+            
+        Nome: André Vieira
+                    
+        #####Atividades da Conta#####
+        Depósito: R${valor_deposito}
+            
+        Saques: 
+        01 - R${saque1}
+        02 - R${saque2}
+        03 - R${saque3}
+            
+        #####Situação da conta#####
+            
+        Saldo atual: R${saldo_atual}
+        """)
+>>>>>>> ef47bbbf102a586b82ebec119af531f75ee39a18
 
 def extornar_conta(saldo, /, *, extrato):
     print(f'{Fore.LIGHTGREEN_EX}==========>>>Extrato<<<==========')
